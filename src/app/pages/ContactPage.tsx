@@ -21,13 +21,13 @@ export function ContactPage() {
       {/* Hero */}
       <section className="relative h-64 md:h-80 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1676302144341-10563603f99a?w=1800&h=500&fit=crop&auto=format"
-          alt="Spa reception"
-          className="w-full h-full object-cover"
+          src="https://images.unsplash.com/photo-1778731525581-9cff0deca568?w=1800&h=500&fit=crop&auto=format"
+          alt="Luxury medical spa reception"
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/55 flex flex-col items-center justify-center text-center px-6">
-          <span className="text-[#829BB9] tracking-[0.3em] uppercase block mb-3" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem", fontWeight: 300 }}>Get in Touch</span>
-          <h1 className="text-white" style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2rem, 5vw, 3.5rem)", fontWeight: 500 }}>Contact Us</h1>
+        <div className="absolute inset-0 bg-black/45 flex flex-col items-center justify-center text-center px-6" style={{ backdropFilter: "grayscale(1) brightness(0.72)" }}>
+          <span className="text-[#829BB9] tracking-[0.3em] uppercase block mb-3" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "16px", fontWeight: 300, textShadow: "0 1px 8px rgba(0,0,0,0.85)" }}>Get in Touch</span>
+          <h1 className="text-white" style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2rem, 5vw, 3.5rem)", fontWeight: 500, textShadow: "0 2px 12px rgba(0,0,0,0.8)" }}>Contact Us</h1>
         </div>
       </section>
 
@@ -82,7 +82,7 @@ export function ContactPage() {
               </div>
               <div className="flex items-center gap-2 text-[#607080]">
                 <CalendarCheck size={13} className="text-[#829BB9]" />
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.75rem", fontWeight: 300 }}>By appointment only</span>
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1rem", fontWeight: 500, color: "#829BB9", letterSpacing: "0.04em" }}>By appointment only — pricing discussed at consultation</span>
               </div>
             </div>
           </div>
@@ -202,15 +202,16 @@ export function ContactPage() {
                     <option>Skin Tag Removal</option>
                     <option>Sclerotherapy</option>
                   </optgroup>
-                  <optgroup label="─── Massage ───">
-                    <option>Swedish Massage</option>
-                    <option>Deep Tissue Massage</option>
-                    <option>Therapeutic Massage</option>
-                    <option>Aromatherapy Massage</option>
-                    <option>Manual Lymphatic Drainage</option>
-                    <option>Reflexology</option>
-                    <option>Toning &amp; Anti-Cellulite Massage</option>
-                    <option>Auriculotherapy</option>
+                  <optgroup label="─── Hair Removal ───">
+                    <option>Laser Hair Removal – Face</option>
+                    <option>Laser Hair Removal – Body</option>
+                    <option>Laser Hair Removal – Full Body</option>
+                    <option>Laser Hair Removal – Bikini</option>
+                    <option>Laser Hair Removal – Brazilian</option>
+                    <option>Laser Hair Removal – Underarms</option>
+                    <option>Laser Hair Removal – Legs</option>
+                    <option>Laser Hair Removal – Arms</option>
+                    <option>Laser Hair Removal – Back</option>
                   </optgroup>
                 </select>
               </div>

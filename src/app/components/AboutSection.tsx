@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import dsc00288 from "../../imports/DSC00288.JPG";
 
 export function AboutSection() {
   return (
@@ -8,34 +9,15 @@ export function AboutSection() {
         <div className="relative">
           <div className="aspect-[4/5] overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1720118509152-2df877673bee?w=800&h=1000&fit=crop&auto=format"
-              alt="Tranquil spa ambiance with candles and serene lighting"
+              src={dsc00288}
+              alt="Panacean Medical Spa"
               className="w-full h-full object-cover"
             />
           </div>
           {/* Decorative offset border */}
           <div className="absolute -bottom-5 -right-5 w-full h-full border border-[#C4965A]/40 -z-10" />
           {/* Stats badge */}
-          <div className="absolute -bottom-6 left-6 text-[#F7F4EF] px-8 py-5 bg-[#829bb9]">
-            <span
-              className="block"
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: "2rem",
-                fontWeight: 500,
-              }}
-            >25+</span>
-            <span
-              className="block tracking-widest uppercase text-[#ffffff]"
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                fontSize: "0.65rem",
-                fontWeight: 300,
-              }}
-            >
-              Years of Excellence
-            </span>
-          </div>
+          
         </div>
 
         {/* Text side */}
@@ -83,36 +65,7 @@ export function AboutSection() {
           >Our primary goal is a natural result with a brief recovery. Elevate your senses and find your perfect Panacean.</p>
 
           {/* Divider row */}
-          <div className="flex gap-8 mb-10 border-t border-[#3B5447]/15 pt-8">
-            {[
-              { stat: "8,000+", label: "Happy Clients" },
-              { stat: "40+", label: "Treatments Offered" },
-              { stat: "12", label: "Award Wins" },
-            ].map(({ stat, label }) => (
-              <div key={label}>
-                <span
-                  className="block text-[#829bb9]"
-                  style={{
-                    fontFamily: "'Playfair Display', serif",
-                    fontSize: "1.6rem",
-                    fontWeight: 500,
-                  }}
-                >
-                  {stat}
-                </span>
-                <span
-                  className="tracking-wide text-[#706e5d]"
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: "0.72rem",
-                    fontWeight: 300,
-                  }}
-                >
-                  {label}
-                </span>
-              </div>
-            ))}
-          </div>
+          
 
           <Link
             to="/about"

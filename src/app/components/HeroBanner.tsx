@@ -4,22 +4,34 @@ import { Link } from "react-router";
 
 const slides = [
   {
-    url: "https://images.unsplash.com/photo-1696841212541-449ca29397cc?w=1800&h=900&fit=crop&auto=format",
-    alt: "Woman relaxing with hot stones on her back during spa treatment",
+    url: "https://images.unsplash.com/photo-1730288951113-9cc087c14b83?w=1800&h=900&fit=crop&auto=format",
+    alt: "Close up of natural skin with spots and freckles",
     heading: "Restore Your Radiance",
-    sub: "Expertly crafted treatments that heal from within",
+    sub: "Advanced treatments for spots, scars, and uneven skin tone",
   },
   {
-    url: "https://images.unsplash.com/photo-1643684391140-c5056cfd3436?w=1800&h=900&fit=crop&auto=format",
-    alt: "Woman receiving a luxurious facial massage",
-    heading: "Reveal Your Best Skin",
-    sub: "Medical-grade facials tailored to your unique needs",
+    url: "https://images.unsplash.com/photo-1670201203208-055d6d79db4a?w=1800&h=900&fit=crop&auto=format",
+    alt: "Person applying skincare serum to their face",
+    heading: "Skin Care for Every Skin",
+    sub: "Inclusive, medical-grade treatments tailored to every tone and concern",
   },
   {
-    url: "https://images.unsplash.com/photo-1488345979593-09db0f85545f?w=1800&h=900&fit=crop&auto=format",
-    alt: "Serene spa pool surrounded by calm water",
-    heading: "Where Wellness Begins",
-    sub: "A sanctuary of calm in the heart of the city",
+    url: "https://images.unsplash.com/photo-1700760933574-9f0f4ea9aa3b?w=1800&h=900&fit=crop&auto=format",
+    alt: "Laser hair removal treatment being performed on a leg",
+    heading: "Precision Laser Treatments",
+    sub: "State-of-the-art laser technology for lasting, visible results",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1731515067388-d5df113d4326?w=1800&h=900&fit=crop&auto=format",
+    alt: "Woman receiving LED blue light therapy anti-aging treatment",
+    heading: "Turn Back Time",
+    sub: "Non-surgical anti-aging procedures expertly administered by our medical team",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1606214554814-e8a9f97bdbb0?w=1800&h=900&fit=crop&auto=format",
+    alt: "Water splash representing hydration and wellness infusion",
+    heading: "Revitalize from Within",
+    sub: "Customized IV wellness infusions to restore energy, immunity, and vitality",
   },
 ];
 
@@ -107,6 +119,7 @@ export function HeroBanner() {
             fontSize: "1.05rem",
             fontWeight: 300,
             letterSpacing: "0.02em",
+            textShadow: "0 1px 10px rgba(0,0,0,0.8)",
           }}
         >
           {slide.sub}

@@ -58,13 +58,13 @@ export function ReviewsPage() {
       {/* Hero */}
       <section className="relative h-72 md:h-96 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=1800&h=600&fit=crop&auto=format"
-          alt="Happy client"
-          className="w-full h-full object-cover"
+          src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1800&h=600&fit=crop&auto=format"
+          alt="Woman receiving facial mask treatment at spa"
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/55 flex flex-col items-center justify-center text-center px-6">
-          <span className="text-[#829BB9] tracking-[0.3em] uppercase block mb-3" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem", fontWeight: 300 }}>Client Stories</span>
-          <h1 className="text-white" style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2rem, 5vw, 3.5rem)", fontWeight: 500 }}>What Our Clients Say</h1>
+        <div className="absolute inset-0 bg-black/45 flex flex-col items-center justify-center text-center px-6" style={{ backdropFilter: "grayscale(1) brightness(0.72)" }}>
+          <span className="text-[#829BB9] tracking-[0.3em] uppercase block mb-3" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "16px", fontWeight: 300, textShadow: "0 1px 8px rgba(0,0,0,0.85)" }}>Client Stories</span>
+          <h1 className="text-white" style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2rem, 5vw, 3.5rem)", fontWeight: 500, textShadow: "0 2px 12px rgba(0,0,0,0.8)" }}>What Our Clients Say</h1>
         </div>
       </section>
 
@@ -120,10 +120,10 @@ export function ReviewsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#829BB9] py-16 text-center px-6">
+      <section className="bg-[#12202C] py-16 text-center px-6">
         <h2 className="text-white mb-4" style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 500 }}>Join Thousands of Happy Clients</h2>
         <p className="text-white/80 mb-8 max-w-md mx-auto" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem", fontWeight: 300 }}>Start your journey with a complimentary consultation.</p>
-        <Link to="/contact" className="inline-block bg-white text-black hover:bg-[#12202C] hover:text-white transition-colors duration-300 px-10 py-3.5" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem", letterSpacing: "0.12em" }}>
+        <Link to="/contact" className="inline-block bg-[#829BB9] hover:bg-white text-white hover:text-black border border-transparent hover:border-[#829BB9] transition-colors duration-300 px-10 py-3.5" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem", letterSpacing: "0.12em" }}>
           BOOK YOUR VISIT
         </Link>
       </section>
