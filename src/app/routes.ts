@@ -1,3 +1,4 @@
+
 import { createBrowserRouter } from "react-router";
 import { Root } from "./components/Root";
 import { HomePage } from "./pages/HomePage";
@@ -7,17 +8,22 @@ import { TreatmentsPage } from "./pages/TreatmentsPage";
 import { ReviewsPage } from "./pages/ReviewsPage";
 import { ContactPage } from "./pages/ContactPage";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      Component: Root,
+      children: [
+        { index: true, Component: HomePage },
+        { path: "about", Component: AboutPage },
+        { path: "services", Component: ServicesPage },
+        { path: "treatments", Component: TreatmentsPage },
+        { path: "reviews", Component: ReviewsPage },
+        { path: "contact", Component: ContactPage },
+      ],
+    },
+  ],
   {
-    path: "/",
-    Component: Root,
-    children: [
-      { index: true, Component: HomePage },
-      { path: "about", Component: AboutPage },
-      { path: "services", Component: ServicesPage },
-      { path: "treatments", Component: TreatmentsPage },
-      { path: "reviews", Component: ReviewsPage },
-      { path: "contact", Component: ContactPage },
-    ],
-  },
-]);
+    basename: import.meta.env.BASE_URL,
+  }
+);
