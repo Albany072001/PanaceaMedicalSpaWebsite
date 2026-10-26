@@ -166,4 +166,4 @@ No license is declared here. Unless the repository includes a separate `LICENSE`
 
 ---
 
-**Panacean Medical Spa Website Prototype** · Built from a Figma Make design · Maintained on GitHub
+**Panacean Medical Spa Website Prototype** · Developed by Albany072001 built from a Figma Make design · Maintained on GitHub
