@@ -1,7 +1,7 @@
 
-  # Panacean Medical Spa Home Page
+  # Panacean Medical Spa Home Page (Copy)
 
-  This is a code bundle for Panacean Medical Spa Home Page. The original project is available at https://www.figma.com/design/bg5P3wZcfqQA7LIxaqujQd/Panacean-Medical-Spa-Home-Page.
+  This is a code bundle for Panacean Medical Spa Home Page (Copy). The original project is available at https://www.figma.com/design/TbEtZGP8MPCNd4e6fjtgOE/Panacean-Medical-Spa-Home-Page--Copy-.
 
   ## Running the code
 

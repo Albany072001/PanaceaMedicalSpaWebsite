@@ -46,10 +46,9 @@ const categories = [
     category: "Laser & Light",
     treatments: [
       { name: "IPL Photofacial", desc: "Intense pulsed light targets sun spots, redness, and uneven tone for a clearer complexion.", time: "30 min" },
-      { name: "Fractional CO₂ Laser", desc: "Deep resurfacing for wrinkles, scars, and significant texture irregularities using advanced laser technology.", time: "60–90 min" },
       { name: "Laser Hair Removal", desc: "Permanent reduction of unwanted hair on face and body, suitable for most skin types.", time: "15–60 min" },
       { name: "Vascular Laser", desc: "Eliminates spider veins, broken capillaries, and diffuse rosacea redness precisely and effectively.", time: "30 min" },
-      { name: "Acne Scar Revision", desc: "Laser-based resurfacing protocol targeting depressed and textural acne scars for smoother skin.", time: "60 min" },
+      { name: "Scar Revision", desc: "Laser-based resurfacing protocol targeting depressed and textural scars for smoother skin.", time: "60 min" },
     ],
   },
   {
@@ -59,8 +58,6 @@ const categories = [
       { name: "RF Skin Tightening", desc: "Radiofrequency energy heats deep tissue to tighten lax skin on the arms, abdomen, and thighs.", time: "45–60 min" },
       { name: "Cellulite Treatment", desc: "Targets the fibrous bands causing skin dimpling for visibly smoother contours.", time: "60 min" },
       { name: "Stretch Mark Therapy", desc: "Laser and microneedling combination to reduce the appearance of stretch marks.", time: "60 min" },
-      { name: "Abdominal Contouring", desc: "Non-invasive sculpting protocol for the midsection using radiofrequency and targeted modalities.", time: "45–60 min" },
-      { name: "Arm & Thigh Sculpting", desc: "Focused toning and tightening treatments for the upper arms and inner thighs.", time: "45 min" },
     ],
   },
   {
@@ -82,20 +79,17 @@ const categories = [
       { name: "Ultrasound", desc: "Diagnostic medical imaging to support treatment planning and internal health assessments.", time: "30 min" },
       { name: "Skin Tag Removal", desc: "Safe, precise removal of benign skin tags using medical-grade techniques with minimal discomfort.", time: "15–30 min" },
       { name: "Sclerotherapy", desc: "Injectable treatment for varicose and spider veins that causes them to fade and collapse over time.", time: "30–45 min" },
+      { name: "Peptide Therapy", desc: "Targeted peptide protocols support recovery, metabolism, immunity, and anti-aging goals — customized to your specific health and wellness needs.", time: "30–45 min" },
     ],
   },
   {
-    id: "massage",
-    category: "Massage",
+    id: "hair-transplant",
+    category: "Hair Transplant",
     treatments: [
-      { name: "Swedish Massage", desc: "Classic relaxation massage using long, flowing strokes to ease tension and improve circulation.", time: "60–90 min" },
-      { name: "Deep Tissue Massage", desc: "Firm pressure targets deeper muscle layers to release chronic tension and postural pain.", time: "60–90 min" },
-      { name: "Therapeutic Massage", desc: "Customized massage addressing specific muscular concerns and therapeutic goals.", time: "60 min" },
-      { name: "Aromatherapy Massage", desc: "Swedish technique enhanced with essential oils chosen for your mood, stress level, or skin needs.", time: "60–90 min" },
-      { name: "Manual Lymphatic Drainage", desc: "Gentle, rhythmic strokes stimulate the lymphatic system to reduce puffiness and support detoxification.", time: "60 min" },
-      { name: "Reflexology", desc: "Targeted pressure on points of the feet and hands that correspond to organs and body systems.", time: "45–60 min" },
-      { name: "Toning & Anti-Cellulite Massage", desc: "Vigorous massage techniques combined with contouring products to improve skin texture and tone.", time: "60 min" },
-      { name: "Auriculotherapy", desc: "Stimulation of specific points on the ear to support pain relief, stress reduction, and systemic balance.", time: "30–45 min" },
+      { name: "FUE Hair Transplant", desc: "Follicular Unit Extraction — individual follicles harvested from the donor area and implanted with precision for natural density and hairline restoration.", time: "4–8 hr" },
+      { name: "Hairline Design Consultation", desc: "A dedicated medical consultation to map your natural hairline, assess donor supply, and design a personalized transplant plan aligned with your facial structure.", time: "60 min" },
+      { name: "PRP for Hair Loss", desc: "Platelet-rich plasma injected into the scalp to stimulate dormant follicles, slow shedding, and complement transplant results with enhanced growth.", time: "45 min" },
+      { name: "Post-Transplant Care Protocol", desc: "Medically supervised aftercare including scalp hygiene guidance, growth-phase monitoring, and follow-up PRP sessions to optimize long-term results.", time: "Ongoing" },
     ],
   },
 ];
@@ -117,19 +111,19 @@ export function TreatmentsPage() {
       {/* Hero */}
       <section className="relative h-72 md:h-96 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1643684391140-c5056cfd3436?w=1800&h=600&fit=crop&auto=format"
-          alt="Facial treatment"
-          className="w-full h-full object-cover"
+          src="https://images.unsplash.com/photo-1713085085470-fba013d67e65?w=1800&h=600&fit=crop&auto=format"
+          alt="Woman getting a facial peel treatment"
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/55 flex flex-col items-center justify-center text-center px-6">
-          <span className="text-[#829BB9] tracking-[0.3em] uppercase block mb-3" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem", fontWeight: 300 }}>Explore the Menu</span>
-          <h1 className="text-white" style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2rem, 5vw, 3.5rem)", fontWeight: 500 }}>All Treatments</h1>
+        <div className="absolute inset-0 bg-black/45 flex flex-col items-center justify-center text-center px-6" style={{ backdropFilter: "grayscale(1) brightness(0.72)" }}>
+          <span className="text-[#829BB9] tracking-[0.3em] uppercase block mb-3" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "16px", fontWeight: 300, textShadow: "0 1px 8px rgba(0,0,0,0.85)" }}>Explore the Menu</span>
+          <h1 className="text-white" style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2rem, 5vw, 3.5rem)", fontWeight: 500, textShadow: "0 2px 12px rgba(0,0,0,0.8)" }}>All Treatments</h1>
         </div>
       </section>
 
       {/* Intro */}
       <section className="py-14 max-w-3xl mx-auto px-6 text-center">
-        <p className="text-[#607080] leading-relaxed" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", fontWeight: 300 }}>
+        <p className="text-[#607080] leading-relaxed" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "18px", fontWeight: 300 }}>
           A full menu of medical-grade treatments spanning face, body, laser, wellness, and more. All protocols are supervised by our board-certified medical team and customized to your skin type and goals.
         </p>
       </section>
@@ -146,10 +140,10 @@ export function TreatmentsPage() {
               {treatments.map(({ name, desc, time }) => (
                 <div key={name} className="p-6 bg-[#EEF4F8] hover:bg-[#829BB9]/10 transition-colors duration-300 cursor-pointer">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-[#12202C]" style={{ fontFamily: "'Playfair Display', serif", fontSize: "1rem", fontWeight: 500 }}>{name}</h3>
-                    <span className="text-[#829BB9] shrink-0 ml-2" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem", fontWeight: 300 }}>{time}</span>
+                    <h3 className="text-[#12202C]" style={{ fontFamily: "'Playfair Display', serif", fontSize: "15px", fontWeight: 500 }}>{name.replace("Vampire", "Plasma")}</h3>
+                    <span className="text-[#829BB9] shrink-0 ml-2" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "13px", fontWeight: 300 }}>{time}</span>
                   </div>
-                  <p className="text-[#607080] leading-relaxed" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem", fontWeight: 300 }}>{desc}</p>
+                  <p className="text-[#607080] leading-relaxed" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "15px", fontWeight: 300 }}>{desc}</p>
                 </div>
               ))}
             </div>
@@ -159,7 +153,7 @@ export function TreatmentsPage() {
 
       {/* Note */}
       <section className="bg-[#12202C] py-14 px-6 text-center">
-        <p className="text-white/70 max-w-xl mx-auto mb-6" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem", fontWeight: 300 }}>
+        <p className="text-white/70 max-w-xl mx-auto mb-6" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "15px", fontWeight: 300 }}>
           Pricing varies by treatment area, protocol, and individual assessment. All pricing is discussed during your complimentary consultation.
         </p>
         <Link to="/contact" className="inline-block bg-[#829BB9] hover:bg-white text-white hover:text-black border border-transparent hover:border-[#829BB9] transition-colors duration-300 px-10 py-3.5" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem", letterSpacing: "0.12em" }}>
